@@ -1,0 +1,142 @@
+body{
+    background: linear-gradient(to left, #c0d4f0 0%, #cca3ff 100%);
+    font-family: Helvetica;
+    font-size: 1.5em;
+}
+
+div{
+    border-radius: 1.5em;
+}
+
+hr{
+    background-image: linear-gradient(-20deg, #6e45e2 0%, #88d3ce 100%);
+    height: 0.1em;
+    border-radius: 3em;
+}
+
+input{
+    text-align: center;
+    border-radius: 0.5em;
+    border-width: 0em;
+    cursor: pointer;
+    font-size: 1.8em;
+    height: 70px;
+}
+
+
+/* index.html----------------------------------------------------------------------------*/
+#index{
+    margin: 175px auto;
+    width: 90%;
+}
+
+#fullName{
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    font-size: 1.5em;
+}
+
+#secondPart{
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+
+#classPage{
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+
+.botton{
+    background: rgba(0, 0, 0, 0);
+}
+
+.botton:hover{
+    background: #b895ff;
+    color: #ffefc7;
+    font-style: italic;
+}
+
+/*AboutMe.html----------------------------------------------------------------------------*/
+#page{
+    width: 90%;
+    margin: 40px auto;
+}
+
+.content{
+    margin: 0 auto 35px;
+    width: 93%;
+}
+
+.content .title{
+    /*background: pink;*/
+    text-align: center;
+    width: 100%;
+    font-size: 1.8em;
+}
+
+.content .brief{
+    /*background: yellow;*/
+    width: 60%;
+    float: left;
+    font-size: 1.5em;
+}
+
+.content .list{
+    /*background: lightskyblue;*/
+    width: 38%;
+    float: right;
+    font-size: 1.5em;
+}
+
+.content .list li:hover{
+    /* background: #b895ff; */
+    color: #ffefc7;
+    font-style: italic;
+}
+
+.content .table{
+    /*background: red;*/
+    float: left;
+    width: 100%;
+    font-size: 1.5em;
+}
+
+.content .distinctPic{
+    /*background: blue;*/
+    text-align: center;
+}
+
+img{
+    width: 30%;
+}
+
+.content .homePage{
+    text-align: center;
+}
+
+.indexPage{
+    /* background: #a0c7ff; */
+    color: #fffbf2;
+    border-radius: 2em;
+    width: 12%;
+    cursor: pointer;
+    font-size: 2em;
+}
+
+@media only screen and (max-width: 900px){
+    /* index HTML*/
+    #index, #fullName, #secondPart, #classPage{
+        width: 100%;
+    }
+
+    /* About Me HTML */
+    .content .brief, .content .list{
+        width: 100%;
+    }
+    img{
+        width: 100%;
+    }
+}
