@@ -48,7 +48,7 @@ window.onload = function() {
 
     fill_text(ctx, "CISC3610 HW1");
 
-    ctx.closepath();
+    ctx.closePath();
 };
 
 /**
@@ -121,7 +121,7 @@ function fill_tree(ctx, x) {
 function fill_house(canvas, ctx) {
     ctx.beginPath();
     let img = document.createElement("img");
-    img.src = "/Assets/house.png";
+    img.src = "../Assets/house.png";
     console.log(img);
     img.onload = function () {
         ctx.drawImage(img, canvas.width / 2 + 130, canvas.height / 2 - 10, 100, 100);
