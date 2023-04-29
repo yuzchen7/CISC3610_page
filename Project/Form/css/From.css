@@ -1,0 +1,46 @@
+html {
+    cursor: none;
+}
+
+body {
+    background-image: url('../Assets/wallhaven-zme8ww.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h2 {
+    margin-bottom: 2px;
+    color: #f72557;
+}
+
+#center_div {
+    width: 50em;
+    background: inherit;
+    margin-top: 10em;
+}
+
+.content_class {
+    display: inline-block;
+    /* background-color: #f72557; */
+    width: 15em;
+    height: 8em;
+}
+
+.input_able {
+    width: 10em;
+    height: 2em;
+    cursor: none;
+}
+
+#circle {
+    position: fixed;
+    background: white;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    /* background: #f72557; */
+    background-color: rgba(247, 37, 87, 0.8);
+    /* align-content: center; */
+    color: white;
+    font-size: 15px;
+}

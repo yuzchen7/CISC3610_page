@@ -1,0 +1,45 @@
+#index {
+    margin: 80px auto;
+    width: 90%;
+}
+
+#fullName {
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    font-size: 1.5em;
+}
+
+#secondPart {
+    align-content: center;
+    text-align: center;
+    width: 60%;
+    margin: auto;
+}
+
+#classPage {
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+
+@media only screen and (max-width: 900px) {
+
+    /* index HTML*/
+    #index,
+    #fullName,
+    #secondPart,
+    #classPage {
+        width: 100%;
+    }
+
+    /* About Me HTML */
+    .content .brief,
+    .content .list {
+        width: 100%;
+    }
+
+    /* img {
+        width: 100%;
+    } */
+}

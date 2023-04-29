@@ -1,45 +1,111 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>YUZHUANG CHEN-MAIN PAGE</title>
-        <!--applies to the CSS file-->
-        <link rel="stylesheet" type="text/css" href="css/index.css">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    </head>
-    <body>
-         <!--At top, Name, Date-->
-         <div id="index">
-            <div id="fullName">
-                <h1>YUZHUANG CHEN</h1>
-                <h2>CISC3610 Homework page<h2>
-            </div>
-            <a href=""></a>
-            <!--A links section to the other pages in website -->
-            <div id="secondPart">
-                <!--horizontal line-->
-                <hr/>
-                <br/>
-                <!--Assginment  page-->
-                <div class="Assignment">
-                    <form action="Assignment/hw1.html">
-                        <input type="submit" value="Assignment 1" class="botton">
-                    </form>
-                </div>
-                <br/><br/>
-                <div class="...up coming...">
-                    <input type="submit" value="... Up Coming. .." class="botton">
-                </div>
-                <br/>
-                <hr/>
-                <br/>
-                <!--Assginment  page-->
-                <div class="lab">
-                    <form action="Lab/lab1.html">
-                        <input type="submit" value="Lab 1" class="botton">
-                    </form>
-                </div>
-            </div>
+
+<head>
+    <meta charset="UTF-8">
+    <title>YUZHUANG CHEN-MAIN PAGE</title>
+    <!--applies to the CSS file-->
+    <link rel="stylesheet" type="text/css" href="css/universal.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <script type="text/javascript" src="JS/universal.js"></script>
+    
+    <script type="text/javascript">
+        window.onload = function() {
+            initialize_circles_pointer();
+        }
+    </script>
+</head>
+
+<body>
+    <input id="circle" type="text" value="" />
+    <!--At top, Name, Date-->
+    <div id="index">
+        <div id="fullName">
+            <h1>YUZHUANG CHEN</h1>
+            <h2>CISC3610 Homework page<h2>
         </div>
-    </body>
+        <!--A links section to the other pages in website -->
+        <div id="secondPart" >
+            <center>
+            <!--horizontal line-->
+            <hr />
+            <br />
+
+            <!--Assginment  page-->
+            <div class="Selection">
+                <center>
+                    <form action="Project/Cartoon/Cartoon.html" class="click_able">
+                        <input type="submit" value="Cartoon" class="botton">
+                    </form>
+                </center>
+            </div>
+            
+            <br />
+
+            <div class="Selection">
+                <center>
+                    <form action="Project/Form/Form.html" class="click_able">
+                        <input type="submit" value="Form" class="botton">
+                    </form>
+                </center>
+            </div>
+
+            <br />
+
+            <div class="Selection">
+                <center>
+                    <form action="Project/Data_Visualization/datachart.html" class="click_able">
+                        <input type="submit" value="Data Visualization" class="botton">
+                    </form>
+                </center>
+            </div>
+
+            <br />
+
+            <div class="Selection">
+                <center>
+                    <form action="Project/Animation/animation.html" class="click_able">
+                        <input type="submit" value="Animation" class="botton">
+                    </form>
+                </center>
+            </div>
+
+            <br /> <hr /> <br />
+
+            <!--lab  page-->
+            <div class="Selection">
+                <center>
+                    <form action="Lab/JSON_Fruit/Fruit.html" class="click_able">
+                        <input type="submit" value="Json Fruit" class="botton">
+                    </form>
+                </center>
+            </div>
+
+            <br />
+
+            <div class="Selection">
+                <center>
+                    <form action="Lab/Audio/Audio.html" class="click_able">
+                        <input type="submit" value="Audio" class="botton">
+                    </form>
+                </center>
+            </div>
+            
+            <br />
+            <hr />
+            <br />
+
+            <div class="Selection">
+                <center>
+                    <form>
+                        <input type="submit" value="... UP-COMMING ..." class="botton">
+                    </form>
+                </center>
+            </div>
+            </center>
+        </div>
+    </div>
+</body>
+
 </html>
