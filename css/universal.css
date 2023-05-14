@@ -49,6 +49,7 @@ form {
     height: 105px;
 }
 
+
 #circle {
     position: fixed;
     background: white;
@@ -76,6 +77,7 @@ form {
 }
 
 .botton {
+    cursor: none;
     /* background: rgba(0, 0, 0, 0); */
     color: white;
     background: transparent;
@@ -85,6 +87,7 @@ form {
 }
 
 .botton:hover {
+    cursor: none;
     /* background: #f72557; */
     color: #f72557;
     /* font-style: italic; */
@@ -98,7 +101,7 @@ form {
 }
 
 @media only screen and (max-width: 900px) {
-    .botton {
+    .botton .click_able input {
         width: 100%;
     }
 
