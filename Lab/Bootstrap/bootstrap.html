@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" tyep="text/css" href="../../Dependence/bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css">
+    <script type="text/javascript" src="../../Dependence/bootstrap-5.3.0-alpha3-dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <script type="text/javascript" src="../../JS/universal.js"></script>
+    <script>
+        window.onload = function() {
+            initialize_circles_pointer();
+        }
+    </script>
+    <title>Bootstrap</title>
+    <!-- 
+        learning source
+        https://www.bilibili.com/video/BV1TU4y1p7zU?p=1 
+        https://getbootstrap.com/docs/5.2/migration/#utilities
+    -->
+</head>
+<body>
+    <input id="circle" type="text" value="" />
+    <div class="container">
+        <div class="h1"> container class -> Hello World </div> 
+        <!-- same as <h1>container class -> Hello World</h1> -->
+        <!-- row class must be in the container class -->
+        <div id="table_test">
+            <div class="small"> table </div> 
+            <!-- same as <small>table</small>  -->
+            <div class="row"> <!-- row element-->
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">col md 4</div>
+                <!-- order of size: extra small, small, medium, large -->
+                <!-- 
+                    for different size of screen 
+                    extra small(xs) : <768px
+                    small(sm) : >=768px
+                    medium(md) : >=992px
+                    large(lg) : >=1200px
+                -->
+                <!-- max col of an row is 12, otherwise go into next line-->
+                <div class="col-md-8">col md 8</div>
+                <div class="col-md-7">col md 7</div>
+                <div class="col-md-3">col md 3</div>
+            </div>
+            <hr />
+            <div class="row"> <!-- row element-->
+                <div class="col-md-3">col md 3</div>
+                <div class="col-md-8 offset-1">col md 8</div>
+                <!-- offset is to move # of space to right -->
+                <div class="col-md-4">col md 4</div>
+                <div class="col-md-3 offset-2">col md 3</div>
+            </div>
+        </div>
+
+        <br>
+        
+        <div style="background-color: lightcyan;">
+            <div class="text-muted"> text-muted notification </div> <!-- color in #999 -->
+            <div class="text-primary"> primary notification </div> <!-- color in #428bca -->
+            <div class="text-success"> success notification </div> <!-- color in #3c763d -->
+            <div class="text-info"> info notification </div> <!-- color in #31708f -->
+            <div class="text-warning"> warning notification </div> <!-- color in #8a6d3b -->
+            <div class="text-danger"> danger notification </div> <!-- color in #a94442 -->
+        </div>
+        
+        <br> <hr> <br>
+        
+        <div id="_text_">
+            <small>text style</small>
+            <br>
+            <p class="text-start">dqyisaudcbvgdjsukgdbcwukjlugkqb</p>
+            <p class="text-end">dqyisaudcbvgdjsukgdbcwukjlugkqb</p>
+            <p class="text-center">dqyisaudcbvgdjsukgdbcwukjlugkqb</p>
+        </div>
+        
+        <br> <hr> <br>
+        
+        <div id="code">
+            <small>code style</small>
+            <br>
+            <code>this is code tag, only for one line</code>
+            <pre> this is code tag, 
+                  for multiple line</pre>
+            <p><kbd>ctrl</kbd> + <kbd>s</kbd> for save</p>
+        </div>
+        
+        <br> <hr> <br>
+        
+        <div id="table_style" style="background-color: white;">
+            <small> table style test</small>
+            <br>
+            <table class="table table-bordered table-striped table-hover table-condensed table-dark">
+                <tr> <!-- #f5f5f5 -->
+                    <th>JAVASE</th>
+                    <th>database</th>
+                    <th>javascript</th>
+                </tr>
+                <tr class="table-active"> <!-- #f5f5f5 -->
+                    <th>JAVASE</th>
+                    <th>database</th>
+                    <th>javascript</th>
+                </tr>
+                <tr class="table-success"> <!-- #dff0d8 -->
+                    <td>OOP</td>
+                    <td>oracle</td>
+                    <td>json</td>
+                </tr>
+                <tr class="table-info"> <!-- cant see -->
+                    <td>array</td>
+                    <td>mysql</td>
+                    <td>ajax</td>
+                </tr>
+                <tr class="table-warning"> <!-- #d9edf7 -->
+                    <td>OOP</td>
+                    <td>oracle</td>
+                    <td>json</td>
+                </tr>
+                <tr class="table-danger"> <!-- #f2dede -->
+                    <td>array</td>
+                    <td>mysql</td>
+                    <td>ajax</td>
+                </tr>
+            </table>
+        </div>
+        
+        <br> <hr> <br>
+
+        <div id="_text_control_">
+            <small>text control test</small>
+            <br> <br>
+            <div class="col-md-4">
+                <input type="text" class="form-control">
+                <input type="text" class="form-control input-lg">
+                <input type="text" class="form-control input-sm">
+            </div>
+            <br>
+            <div class="col-md-4">
+                <select class="form-control">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </div>
+            <br>
+            <div class="col-md-4">
+                <textarea class="form-control"></textarea>
+            </div>
+        </div>
+
+                
+        <br> <hr> <br>
+
+        <div class="checkbox_style_test">
+            <small>checkbox_style_test</small> <br>
+            <!-- 
+                checkbox can replace by radio
+                checkbox-inline can replace by radio-inline
+            -->
+            <div class="col-md-4">
+                <div class="checkbox">
+                   <label>
+                        <input type="checkbox" name="male"> male
+                   </label> 
+                </div>
+                <div class="checkbox">
+                    <label>
+                         <input type="checkbox" name="female"> female
+                    </label> 
+                 </div>
+                 <div class="checkbox">
+                    <label>
+                         <input type="checkbox" name="sex"> sex
+                    </label> 
+                 </div>
+            </div>
+            <br>
+            <div class="col-md-4">
+                <label class="checkbox-inline">
+                    <input type="checkbox" name="male"> male
+               </label> 
+                <label class="checkbox-inline">
+                     <input type="checkbox" name="female"> female
+                </label> 
+                <label class="checkbox-inline">
+                     <input type="checkbox" name="sex"> sex
+                </label> 
+            </div>
+        </div>
+
+        <br> <hr> <br>
+
+        <div class="btn_test">
+            <small>button test</small> <br>
+            <button class="btn">button</button>
+            <button class="btn btn-danger">button</button>
+            <button class="btn btn-primary">button</button>
+            <button class="btn btn-info">button</button>
+            <button class="btn btn-success">button</button>
+            <button class="btn btn-defualt">button</button>
+            <button class="btn btn-warning">button</button>
+            <button class="btn btn-link">button</button>
+
+            <!-- size of the button -->
+            <button class="btn btn-danger btn-lg">button</button>
+            <button class="btn btn-danger btn-sm">button</button> <!-- defualt size -->
+            <button class="btn btn-danger btn-xs">button</button>
+
+            <!-- disable -->
+            <button class="btn btn-link disable">button</button>
+        </div>
+
+        <br> <hr> <br>
+
+        <div class="form_test">
+            <small>from test</small> <br>
+            <form action='#' class="form-horizontal" role="form" >
+                <div class="form-group">
+                    <label for="email" class="form-lable col-md-3">Email&nbsp;Address</label>
+                    <div class="col-md-7">
+                        <input type="email" class="form-control" placeholder="enter email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="password" class="form-lable col-md-3">password</label>
+                    <div class="col-md-7">
+                        <input type="password" class="form-control" placeholder="enter password">
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <br> <hr> <br>
+
+    </div>
+    
+    <br />
+    
+    <div class="container-fluid">
+        <h1>container-fluid class -> Hello World</h1>
+    </div>
+    
+    <br>
+    
+    <h1>Hello World</h1>
+
+    <center>
+        <div>
+            <center>
+                <form action="../../index.html" class="click_able">
+                    <input id="main_btn" type="submit" value="Back To Main Page" class="botton">
+                </form>
+            </center>
+        </div>
+    </center>
+</body>
+</html>
